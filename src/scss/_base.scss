@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Bebas Neue', 'Open Sans','Arial', sans-serif;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container_caste {
+  max-width: 960px;
+  min-width: 320px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  &:after {
+    display: table;
+    content: ' ';
+    clear: both;
+  }
+}
+
+.clearfix {
+  &:after {
+    display: table;
+    content: ' ';
+    clear: both;
+  }
+}

@@ -1,0 +1,280 @@
+.header_top {
+  background: url("../images/header.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.block_top {
+  padding: 123px 0 0 67px;
+}
+
+h1, h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #fff;
+  /*line-height: 64px;*/
+}
+
+h1 {
+  font-size: 90px;
+  line-height: 69px;
+}
+
+h4 {
+  font-size: 36px;
+  margin-bottom: -8px;
+}
+
+.header_bottom {
+  padding: 5px 0 28px;
+  width: 100%;
+  background-color: #252222;
+}
+
+.MobMenu_caste {
+  position: relative;
+}
+
+.logo {
+  float: left;
+  padding-top: 11px;
+  padding-left: 28px;
+}
+
+.logo a {
+  display: block;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.right {
+  float: right;
+  padding-top: 30px;
+}
+
+.menu_cont {
+  display: inline-block;
+}
+
+.menu_cont {
+  position: relative;
+  display: block;
+  padding: 0;
+  border-top: none;
+}
+
+.menu {
+  @include listReset();
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 26px;
+  padding-bottom: 7px;
+  &:active,
+  &:hover {
+    border-bottom: 2px solid #65ba99;
+  }
+}
+
+.menu a {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #65ba99;
+  &:active {
+    color: #65ba99;
+  }
+}
+
+.social {
+  display: inline-block;
+  margin-left: 63px;
+  vertical-align: middle;
+}
+
+.social a {
+  display: inline-block;
+  margin-left: 11px;
+}
+
+.soc-button {
+  width: 35px;
+  height: 35px;
+  background: url('../images/social/css_sprites.png');
+  border-radius: 50%;
+  &:hover {
+    background-color: #00ffa2;
+  }
+}
+
+.icon-link {
+  background-position: -12px -13px;
+  @extend .soc-button;
+}
+
+.icon-face {
+  background-position: -193px -13px;
+  @extend .soc-button;
+}
+
+.icon-dote {
+  background-position: -72px -13px;
+  @extend .soc-button;
+}
+
+.icon-twit {
+  background-position: -132px -14px;
+  @extend .soc-button;
+}
+
+.MobMenu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 75px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+
+  .right .menu {
+    display: none;
+  }
+  .logo {
+    padding-left: 0;
+  }
+  .logo a {
+    position: absolute;
+    width: 95px;
+    height: 55px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .MobMenu {
+    display: block;
+    float: left;
+    width: 40px;
+    margin-top: 30px;
+  }
+
+  .MobMenu span {
+    display: block;
+    height: 4px;
+    margin-bottom: 6px;
+    background-color: #fff;
+  }
+
+  .MobMenu span:last-child {
+    margin-bottom: 0;
+  }
+  .menu_cont {
+    display: none;
+    position: absolute;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid rgba(255, 255, 255, .8);
+    top: 138%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+  }
+
+  .menu_cont.open {
+    display: block;
+  }
+
+  .right .menu {
+    display: none;
+  }
+  .right .menu {
+    display: block;
+  }
+  .right .menu li {
+    display: block;
+  }
+  .right .menu li a {
+    display: block;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu_cont {
+    top: 146%;
+  }
+  .social {
+    display: none;
+  }
+  h1 {
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+  .menu_cont {
+    top: 179%;
+  }
+  .MobMenu {
+    position: absolute;
+    width: 45px;
+    height: 0px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 50px;
+  }
+  h4 {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
